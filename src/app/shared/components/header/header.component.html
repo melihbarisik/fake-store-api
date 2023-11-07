@@ -1,13 +1,14 @@
 <header>
-    <div class="header">
-        <div class="header-logo">
-            <img src="../../../../assets/images/Meubel-House_Logos-02.png" />
+    <div class="header-container">
+        <div class="header-container-logo">
+            <img src="../../../../assets/images/logo.png" class="header-logo-image"/>
+            <span>Furniro</span>
         </div>
 
-        <nav>
-            <ul class="header-menu">
+        <div class="header-container-nav hide-for-mobile">
+            <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="/home">Home</a>
                 </li>
                 <li>
                     <a href="#">Shop</a>
@@ -19,7 +20,34 @@
                     <a href="#">Content</a>
                 </li>
             </ul>
-        </nav>
+        </div>
+
+        <div class="hide-for-desktop header-hamburger-list">
+            <mat-icon (click)="toggleList()" >menu</mat-icon>
+            <div *ngIf="isListVisible">
+                    <ul>
+                        <li>
+                            <a href="/home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Content</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="header-container-icons">
+            <mat-icon>favorite_outline</mat-icon>
+            <mat-icon>account_circle</mat-icon>
+            <mat-icon>search</mat-icon>
+            <mat-icon>shopping_cart</mat-icon>
+        </div>
 
     </div>
 </header>
