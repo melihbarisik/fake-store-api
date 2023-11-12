@@ -22,10 +22,10 @@
             </ul>
         </div>
 
-        <div class="hide-for-desktop header-hamburger-list">
+        <div class="hide-for-desktop header-container-hamburger-list">
             <mat-icon (click)="toggleList()" >menu</mat-icon>
             <div *ngIf="isListVisible">
-                    <ul>
+                    <ul class="header-container-hidden-list">
                         <li>
                             <a href="/home">Home</a>
                         </li>

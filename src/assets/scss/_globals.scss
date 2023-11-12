@@ -1,6 +1,6 @@
 // Visibility
 .hide-for-mobile {
-    @include breakpoint-down(small) {
+    @include breakpoint-down(medium) {
       display: none !important;
     }
   }

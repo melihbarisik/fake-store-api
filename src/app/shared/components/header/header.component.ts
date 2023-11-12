@@ -19,7 +19,6 @@ export class HeaderComponent {
 
   toggleList() {
     this.isListVisible = !this.isListVisible;
-    console.log('islistvisible', this.isListVisible);
   }
 
 }
